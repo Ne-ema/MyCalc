@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5BABA"
+
+    tools:context=".CalculatorActivity"><![CDATA[
+
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/txt_Ans"
+        android:layout_width="214dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="45dp"
+        android:text="Answer Here"
+        android:textColor="#8E0133"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edt_fnum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edt_fnum"
+        android:layout_width="272dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="#1C1313"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="number"
+        android:textColor="#1C1313"
+        android:textColorHint="#350E0E"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Edt_snum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Ans" />
+
+    <EditText
+        android:id="@+id/Edt_snum"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="#1C1313"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="number"
+        android:textColor="#1C1313"
+        android:textColorHint="#350E0E"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_fnum" />
+
+    <Button
+        android:id="@+id/Btn_Add"
+        android:layout_width="73dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="12dp"
+        android:text="+"
+        android:backgroundTint="#403655"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_div"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_sub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_snum" />
+
+    <Button
+        android:id="@+id/Btn_sub"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="243dp"
+        android:backgroundTint="#403655"
+        android:text="-"
+        android:textSize="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Btn_Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn_Add" />
+
+    <Button
+        android:id="@+id/Btn_div"
+        android:layout_width="79dp"
+        android:backgroundTint="#403655"
+        android:layout_height="74dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="178dp"
+        android:text="/"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_mult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Add" />
+
+    <Button
+        android:id="@+id/Btn_mult"
+        android:layout_width="74dp"
+        android:backgroundTint="#403655"
+        android:layout_height="71dp"
+        android:layout_marginEnd="250dp"
+        android:text="*"
+        android:textSize="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Btn_div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn_div" />
+</android.support.constraint.ConstraintLayout>
